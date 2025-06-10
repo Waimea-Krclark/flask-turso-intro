@@ -14,8 +14,12 @@
     <section id="things">
 
         {% for thing in things %}
-            <p> <a href="/thing/{{thing.id}}">{{ thing.name }} - ${{thing.price}}</a></p>
-
+            <article id="item">
+                <section id="item">
+                    <p> <a href="/thing/{{thing.id}}">{{ thing.name }} - ${{thing.price}}</a></p>
+                    <p><a type="button" href="/delete/{{thing.id}}" id="delete">DELETE</a></p>
+                </section>
+            </article>
         {% endfor %}
     </section>
 

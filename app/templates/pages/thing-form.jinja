@@ -12,9 +12,18 @@
     <h1>New Thing</h1>
 
     <article>
+        <form action="/add-thing" method="POST">
+            <label>
+                Name
+                <input name="name" type="text" placeholder="Enter Name" required>
+            </label>        
+            <label>
+                Price ($)
+                <input name="price" type="number" min="0" value="0" required>
+            </label>     
 
-        <P>THING FORM HERE!!!</P>
-
+            <button>Submit</button>
+        </form>
     </article>
 
 {% endblock %}

@@ -1,0 +1,13 @@
+section#item{
+    display: flex;
+    justify-content: space-between;
+}
+a#delete{
+    font-size: 0.8rem;
+    padding: 2px;
+}
+
+article#item{
+    height: 3.5rem;
+
+}
